@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box {
+            height: 150px;
+            width: 120px;
+            color: rgb(246, 246, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .static-box {
+            background-color: blueviolet;
+            position: static;
+        }
+
+        .normal-box {
+            background-color: lightgreen;
+        }
+
+        .fixed-box {
+            height: 150px;
+            width: 120px;
+            background-color: cadetblue;
+            color: rgb(246, 246, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-size: 18px;
+            position: fixed;
+            top: 40px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Position Demo</h1>
+    <hr>
+
+    <div class="box static-box">Static Box Example</div>
+    <div class="box normal-box">Normal Box Example</div>
+
+    <hr>
+
+    <div class="fixed-box">Fixed Box Example</div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-orientation in CSS</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: left;
+            color: rgb(89, 138, 205);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            color: brown;
+            text-align: justify;
+            margin-bottom: 10px;
+            text-indent: 30px;
+        }
+
+        .vertical {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .sideway {
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>text-orientation in CSS</h1>
+    <hr>
+
+    <h2>Normal Text</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident excepturi modi cum corrupti earum
+        consequatur quae, dolorum itaque rerum nostrum suscipit sit tenetur aut reprehenderit. Repellendus, suscipit?
+        Suscipit molestias vero non blanditiis nam ab, hic, dicta distinctio beatae quisquam quae eaque alias veniam
+        nemo aliquid fuga ad consequuntur! Quae dignissimos ex pariatur non excepturi nobis expedita? Omnis non
+        perspiciatis, vel asperiores, mollitia, culpa atque cum nisi optio recusandae ex praesentium dolore!
+        Perspiciatis, quam eius nobis ipsa dolorem asperiores animi incidunt repudiandae corrupti possimus fugiat alias,
+        culpa necessitatibus doloribus tenetur vel repellendus sapiente id aperiam ratione eum totam eos! Quam sit, quia
+        odit vitae accusantium consectetur tempora fuga, quod doloribus earum enim alias. Ad laborum, repellendus amet
+        animi provident voluptates impedit, qui commodi voluptate sit assumenda reprehenderit. Provident itaque beatae
+        tempora perspiciatis pariatur vero perferendis omnis natus, alias nisi sunt eius suscipit expedita aperiam quia
+        rerum? Laborum ab ipsum earum.</p>
+
+    <hr>
+    <h2>Vertical Text</h2>
+    <p class="vertical">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, odit!</p>
+
+    <hr>
+    <h2>Sideways Text</h2>
+    <p class="sideway">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem provident harum quidem maxime,
+        dolor quo ut nobis
+        iusto hic quaerat?</p>
+</body>
+
+</html>

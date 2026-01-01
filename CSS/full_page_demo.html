@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background with Navbar</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #d67ca9, #2575fc);
+            /* Gradient background */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .navbar img {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+
+
+
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .navbar a:hover {
+            color: #ffe37b;
+        }
+
+        /* Hero text */
+        .content {
+            text-align: center;
+            margin-top: 120px;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 1.3rem;
+        }
+
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 120px;
+            padding: 40px 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Logo */
+        .footer-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+        }
+
+        /* Contact Info */
+        .footer-contact p {
+            margin: 4px 0;
+            font-size: 16px;
+        }
+
+        /* Copyright */
+        .footer-copy {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="icon.png" alt="Logo"> <!-- Replace with your icon -->
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>Internal CSS with Gradient Background + Navbar Icon</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis debitis quidem natus explicabo
+            unde dignissimos impedit corporis atque, dolorem est eos molestiae quaerat ipsa iste eius quisquam earum
+            officia esse itaque similique error! Cupiditate provident quia delectus tempora mollitia quos quidem, error
+            ratione voluptatum, necessitatibus dicta. Qui aliquid quidem, a illum ducimus est? Distinctio excepturi
+            maxime quasi corrupti, reprehenderit nemo aliquam obcaecati error! Tenetur ex repudiandae, rerum id rem
+            omnis vero aperiam illum labore eaque maxime qui aut minima, dicta mollitia aspernatur quasi molestias minus
+            magnam! Officiis architecto nihil quia totam, nisi ullam quidem magni aliquam ad voluptatibus at quis optio
+            molestias eius! Ullam minus iusto alias nemo dolorum consequatur nisi, minima et quasi impedit id, facilis
+            quis, velit incidunt facere nesciunt commodi? Porro distinctio velit et praesentium facere exercitationem
+            earum assumenda odio expedita iste, necessitatibus id aspernatur quas cumque possimus est, incidunt esse
+            quia, quidem veritatis officia amet.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- Middle: Logo -->
+            <img src="icon.png" alt="Site Logo" class="footer-logo">
+
+            <!-- Right: Contact Info -->
+            <div class="footer-contact">
+                <p>Email: sanket.tops@gmail.com</p>
+                <p>Phone: +91 9724799469</p>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 TOPS Tech. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

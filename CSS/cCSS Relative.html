@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Relative Positioning</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: beige;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: blueviolet;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .relative-box {
+            background-color: aqua;
+            position: relative;
+            top: 60px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Relative Positioning</h1>
+    <hr>
+    <div class="container">
+        <div class="box relative-box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequuntur.</p>
+        </div>
+    </div>
+</body>
+
+</html>

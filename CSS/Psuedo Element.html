@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Psuedo Elements</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 2px;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blue;
+            text-align: center;
+        }
+
+        /*Psuedo Elements*/
+        h1::before {
+            content: "⭐";
+        }
+
+        h1::after {
+            content: "✔️";
+        }
+
+        /*p::first-letter {
+            font-weight: bold;
+            font-size: xx-large;
+            color: brown;
+        }*/
+        /*p::first-line {
+            font-weight: bold;
+            font-size: xx-large;
+            color: brown;
+        }*/
+        p::first-letter {
+            font-weight: bold;
+            font-size: xx-large;
+            color: brown;
+        }
+
+        p::selection {
+            background-color: blueviolet;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Psuedo Elements Example</h1>
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum architecto atque at error voluptates non fugiat
+        necessitatibus, explicabo delectus quia minus nostrum reprehenderit nemo modi natus, sit quisquam vitae incidunt
+        aut amet eius exercitationem, cupiditate quibusdam nesciunt? Dignissimos nostrum, dolorum quasi cumque pariatur
+        officia dicta error repellat quaerat exercitationem consectetur.</p>
+</body>
+
+</html>

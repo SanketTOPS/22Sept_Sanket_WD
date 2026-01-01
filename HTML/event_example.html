@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in HTML</title>
+</head>
+
+<body bgcolor="lightblue">
+
+    <center>
+        <h2 id="txt">Mouse Event Demo</h2>
+        <button ondblclick=btnClick()>Click Me</button>
+    </center>
+
+
+    <h3 id="result"></h3>
+    <input type="text" placeholder="Username"> <br><br>
+    <input type="password" placeholder="Password"> <br><br>
+    <input type="button" onclick=formSubmit() value="Save">
+
+
+
+
+    <script>
+        function btnClick() {
+            let txt = document.getElementById("txt");
+            txt.innerText = "Hello Students!"
+            txt.style.backgroundColor = "red"
+        }
+
+
+        function formSubmit() {
+            let result = document.getElementById("result");
+            result.innerText = "Success!"
+            //console.log("Function kaam kare che!")
+        }
+    </script>
+</body>
+
+</html>

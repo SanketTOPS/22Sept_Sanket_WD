@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blue;
+            text-align: center;
+        }
+
+        .box {
+            background-color: aliceblue;
+            display: grid;
+            padding: 10px;
+            /* grid-template-columns: 80px auto 80px; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-rows: 80px 200px 200px; */
+        }
+
+        .box div {
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 30px;
+            padding: 15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid in CSS</h1>
+    <hr>
+
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>

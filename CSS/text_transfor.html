@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform in CSS</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blue;
+            /* text-transform: capitalize; */
+            /* text-transform: uppercase; */
+            /* text-transform: lowercase; */
+            /* text-transform: none; */
+            text-transform: inherit;
+        }
+
+        p {
+            color: rgb(37, 167, 123);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text transform in CSS</h1>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora modi facilis ratione, eveniet quasi
+        maiores consequuntur laboriosam qui assumenda dignissimos rem autem esse? Ut, porro libero amet ea enim sunt
+        ipsum nesciunt beatae modi, unde quisquam. Asperiores mollitia omnis iusto, voluptate, molestias adipisci cum
+        qui nostrum similique aperiam praesentium!
+    </p>
+
+    <div style="color: green;">
+        <p>Normal paragraph (inherits green)</p>
+        <p style="color: initial;">This resets to default color</p>
+        <p style="color: inherit;">This inherits green from parent</p>
+    </div>
+
+</body>
+
+</html>
