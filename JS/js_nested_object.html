@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Nested Object Example</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">JS Nested Object Example</h1>
+    <hr>
+
+    <script>
+        /*stdata = {
+            "id": [101, 102, 103],
+            "name": ["sanket", "hitesh", "ashok"],
+            "sub": ["HTML", "CSS", "JS"],
+            "city": ["Rajkot", "Baroda", "Surat"]
+        }*/
+
+        stdata = [
+            {
+                "id": 101,
+                "name": "sanket",
+                "sub": "JS",
+                "city": "Rajkot"
+            },
+            {
+                "id": 101,
+                "name": "sanket",
+                "sub": "JS",
+                "city": "Rajkot"
+            },
+            {
+                "id": 101,
+                "name": "sanket",
+                "sub": "JS",
+                "city": "Rajkot"
+            }
+        ]
+
+        //console.log(stdata)
+        //console.log(stdata["id"])
+
+        for (const i in stdata) {
+            console.log(stdata[i])
+
+        }
+
+    </script>
+</body>
+
+</html>
