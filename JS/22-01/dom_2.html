@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">DOM-2</h1>
+    <hr>
+
+    <div>
+        <input type="text" id="name" placeholder="Enter Name">
+    </div>
+    <br><br>
+    <button onclick="btnClick()">Click Me!</button>
+
+    <script>
+        function btnClick() {
+            let nm = document.getElementById("name").value
+            document.writeln(nm)
+        }
+    </script>
+</body>
+
+</html>
