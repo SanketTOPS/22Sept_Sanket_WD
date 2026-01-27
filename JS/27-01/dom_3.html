@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">DOM-3</h1>
+    <hr>
+
+    <input type="text" id="txt" placeholder="Enter Name">
+    <button onclick="btnClick()">Add</button>
+
+    <ol id="namelist">
+
+    </ol>
+
+    <script>
+        function btnClick() {
+
+            let nm = document.getElementById("txt").value;
+
+            let ol = document.getElementById("namelist")
+
+            let li = document.createElement("li")
+            li.textContent = nm
+            ol.appendChild(li)
+
+            document.getElementById("txt").value = "";
+
+        }
+    </script>
+</body>
+
+</html>
