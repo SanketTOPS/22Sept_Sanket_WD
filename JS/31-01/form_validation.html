@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">Form Validation</h1>
+    <hr>
+
+    <form onsubmit="myForm()">
+        <input type="text" id="fname" placeholder="Firstname"> <br><br>
+        <input type="text" id="lname" placeholder="Lastname"> <br><br>
+        <input type="text" id="email" placeholder="Email"> <br><br>
+        <input type="password" id="pass" placeholder="Password"> <br><br>
+        <input type="password" id="cpass" placeholder="Confirm Password"> <br><br>
+        <input type="number" id="mobile" placeholder="Mobile"> <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function myForm() {
+            const fnm = document.getElementById("fname").value;
+            const lnm = document.getElementById("lname").value;
+            const em = document.getElementById("email").value;
+            const pas = document.getElementById("pass").value;
+            const cpas = document.getElementById("cpass").value;
+            const mob = document.getElementById("mobile").value;
+
+            if (fnm === "") {
+                alert("Firstname is required!")
+            }
+            if (lnm === "") {
+                alert("Lastname is required!")
+            }
+            if (!em.includes("@") || !em.includes(".")) {
+                alert("Invalid Email!")
+            }
+            if (pas.length < 6) {
+                alert("Password must be at least 6 characters")
+            }
+            if (pas != cpas) {
+                alert("Passwords do not match")
+            }
+            if (mob.length != 10) {
+                alert("Enter valid 10-digit mobile number")
+            }
+            else {
+                alert("Form submitted successfully!")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
