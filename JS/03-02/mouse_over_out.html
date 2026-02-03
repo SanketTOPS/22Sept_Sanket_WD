@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Mouse Over + Out</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">Mouse Over + Out Event</h1>
+    <hr>
+
+    <div id="box" style="height: 100px;width: 200px;background: lightblue;">
+
+    </div>
+    <script>
+
+        let box = document.getElementById("box");
+
+        box.onmouseover = function () {
+            box.style.backgroundColor = "orange";
+        }
+
+        box.onmouseout = function () {
+            box.style.backgroundColor = "lightblue";
+        }
+    </script>
+</body>
+
+</html>

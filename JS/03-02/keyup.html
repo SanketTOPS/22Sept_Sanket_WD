@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Keyup</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1 style="text-align: center;color: blue;">Keyup Event</h1>
+    <hr>
+
+    <input type="text" id="txt" placeholder="Name">
+    <p id="p"></p>
+
+    <script>
+        let txt = document.getElementById("txt");
+
+        txt.onkeyup = function () {
+            let p = document.getElementById("p").innerText = "Don't stop writing...";
+        }
+
+    </script>
+</body>
+
+</html>
