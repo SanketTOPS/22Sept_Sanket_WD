@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Event - 1</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-style: dashed;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Listener - 1</h1>
+    <hr>
+    <button id="btn">Click Me</button>
+
+    <hr>
+    <div id="box" style="height: 100px;width: 100;background-color: orange;"></div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+            alert("This is button click event!")
+        })
+
+        document.getElementById("box").addEventListener("dblclick", function () {
+            document.getElementById("box").style.backgroundColor = "purple";
+        })
+    </script>
+</body>
+
+</html>
